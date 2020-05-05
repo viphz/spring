@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd"
+        default-autowire="byName">
+
+    <bean id="dao0" class="com.springioc.autowire.DaoAutowireImpl"/>
+    <bean id="dao1" class="com.springioc.autowire.DaoAutowireImplCopy"/>
+    <bean id="service" class="com.springioc.autowire.ServiceAutowire" autowire="byName">
+<!--        <property name="dao" ref="dao"/>-->
+    </bean>
+
+</beans>
