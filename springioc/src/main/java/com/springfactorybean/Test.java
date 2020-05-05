@@ -13,5 +13,6 @@ public class Test {
         daoFactoryBean.testBean();//ClassCastException，但spring中的就是DaoFactoryBean，为什么会报错？
 //        TempDaoFactoryBean daoFactoryBean = (TempDaoFactoryBean) annotationConfigApplicationContext.getBean("daoFactoryBean");
 //        daoFactoryBean.test();//此时会成功
+        System.out.println("xxx");
     }
 }
